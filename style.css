@@ -1,0 +1,57 @@
+/* Entfernt weißen rand um z.B. den header */
+body {
+    margin: 0;
+}
+
+header {
+ 
+    background-color: bisque;
+    border-bottom: 1px solid red;
+
+    /* Flexbox für die drei Kinder, rechts, mitte links verteilt, und in der mitte (vertikal) zentriert */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+
+}
+
+header ul {
+    /* Flexbox für die 3 Listenelemente */
+    display: flex;
+    /* Punkte der Liste entfernen */
+    list-style: none;
+}
+
+header ul li {
+    background-color: blue;
+    color: white;
+    border: 1px solid red;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* Kinder nebeneinander stellen  */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.container > div {
+    width: 400px;
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+
+.veg {
+    border: 1px solid green;
+}
+
+.fruit {
+    border: 1px solid red;
+}
+
+.hide {
+    display: none;
+}
